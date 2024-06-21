@@ -22,19 +22,20 @@
 //output: new accum (any)
 
 function calcExpenses(transactions) {
-  const res = transactions.reduce((acc, el, index) => {
-    console.log('Step' + index);
-    console.log('acc' + acc);
-    console.log('el' + el);
+  //opt 1
+  //const res = transactions.reduce((acc, el, index) => {
+    //console.log('Step' + index);
+    //console.log('acc' + acc);
+    //console.log('el' + el);
 
-    if(el < 0) {
-      acc += el;
-    }
-    return acc;
-  }, 0);
+    //if(el < 0) {
+      //acc += el;
+   // }
+    //return acc;
+ // }, 0);
   // put your code here
-  console.log('res: ', res);
-  return Math.abs(res);
+  //console.log('res: ', res);
+  //return Math.abs(res);
   
   //opt 2
   return Math.abs(transactions.reduce(acc, el) => (el < 0 ? acc + el : el), 0));
