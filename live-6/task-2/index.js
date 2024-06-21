@@ -27,7 +27,7 @@ function calcExpenses(transactions) {
     console.log('acc' + acc);
     console.log('el' + el);
 
-    if(el < 0) {
+    if (el < 0) {
       acc += el;
     }
     return acc;
