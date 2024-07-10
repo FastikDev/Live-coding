@@ -27,6 +27,7 @@ function getTopStudent (students) {
 const student1 = new Student(1, 'John', 'Doe', 'FE', 100);
 const student2 = new Student(2, 'Ann', 'Joo', 'FE', 100);
 
+student2.setIsActive = false;
 console.log(getTopStudent([student1, student2]));
 
 const user1 = new User(1, 'John', 'Doe');
