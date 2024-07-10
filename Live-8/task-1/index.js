@@ -14,7 +14,7 @@ console.log(student);
 student.getFullName();
 
 function getTopStudent (students) {
-  { id, firstName, lastName } = students.filter(student => student.getIsActive).reduce((topStudent, curentStudent) => {
+  const { id, firstName, lastName } = students.filter(student => student.getIsActive).reduce((topStudent, curentStudent) => {
     if (curentStudent.points > topStudent.points) {
       return curentStudent;
     }
