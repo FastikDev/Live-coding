@@ -13,7 +13,7 @@ const student = new Student(1, 'Jane', 'Doe', 'FE', 100);
 console.log(student);
 student.getFullName();
 
-const getTopStudent = students => {
+function getTopStudent (students) {
   { id, firstName, lastName } = students.filter(student => student.getIsActive).reduce((topStudent, curentStudent) => {
     if (curentStudent.points > topStudent.points) {
       return curentStudent;
@@ -21,7 +21,7 @@ const getTopStudent = students => {
     return topStudent;
   }, students[0]);
   return { id, firstName, lastName };
-};
+}
 
 //testing
 const student1 = new Student(1, 'John', 'Doe', 'FE', 100);
