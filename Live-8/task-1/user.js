@@ -17,7 +17,7 @@ export class User {
 
   set setIsAdmin (value) {
     if (typeof value !== 'boolean') {
-      console-error('value is not a boolean type');
+      console.error('value is not a boolean type');
       return;
     }
     this.#isAdmin = value;
